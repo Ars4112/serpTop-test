@@ -1,0 +1,44 @@
+.crumbs {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.crumbs__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.crumbs__item {
+  padding-right: 20px;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  position: relative;
+
+  & > a {
+    color: #71717a;
+  }
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    color: #000000;
+  }
+
+  &:last-child > a {
+    padding-right: 0;
+    color: #24a186;
+    cursor: default;
+  }
+}

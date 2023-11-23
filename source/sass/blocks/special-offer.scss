@@ -1,0 +1,41 @@
+.special-offer {
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  background-color: #f6f7f9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.special-offer__text {
+  color: #18181b;
+}
+
+.special-offer__price {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.special-offer__inner-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.special-offer__button {
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  color: #24a186;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: 1px solid #24a186;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-button;
+    color: $color;
+  }
+}
